@@ -1,0 +1,52 @@
+.headerCalendar {
+    margin: 15px 0px;
+
+    &Option {
+        & ul {
+            list-style-type: none;
+
+            & li {
+                display: inline-block;
+                font-size: 13px;
+                width: calc(14% - 2px);
+                padding: 3px 0px;
+                text-align: center;
+                font-weight: bold;
+                border: 1px solid rgb(212, 212, 212);
+                margin-left: 1px;
+                border-radius: 10px 10px 0px 0px;
+                background-color: #f5f5f5;
+                cursor: pointer;
+
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+    }
+
+    &List {
+        margin-top: 15px;
+
+        & ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+
+            & li {
+                border: 1px solid rgb(212, 212, 212);
+                margin-left: 5px;
+                padding: 1px 8px;
+                font-size: 13px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+    }
+
+}

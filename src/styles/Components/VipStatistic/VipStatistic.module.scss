@@ -1,0 +1,50 @@
+.vipStatistic {
+    width: 100%;
+    @media only screen and (max-width: 680px) {
+        & {
+            width: 80%;
+            margin: 15px auto;
+        }
+    }
+
+    &Title {
+        margin: 0;
+        text-align: center;
+        color: white;
+        background: linear-gradient(to top, #a0522c 0%, #e3905c 100%);
+        font-size: 17px;
+        padding: 13px 0px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        font-weight: bold;
+    }
+
+    &Content {
+        border: 1px solid #f3a97c;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        & p {
+            font-size: 14px;
+            color: #333333;
+            margin: 0;
+            transition: 0.05s;
+            border-bottom: 1px solid #dadada;
+            padding: 10px;
+            cursor: pointer;
+
+            &:hover {
+                color: white;
+                background-color: #ab5b34;
+            }
+        }
+
+        &Icon {
+            color: #f3a97c;
+            vertical-align: -1px;
+        }
+        & hr {
+            border: 1px solid #ededed;
+        }
+    }
+}

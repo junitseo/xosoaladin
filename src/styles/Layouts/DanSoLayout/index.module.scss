@@ -1,0 +1,13 @@
+.mainLayout {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    &Content {
+        margin-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 0.5px solid gray;
+        max-width: 1120px;
+        flex-shrink: 0;
+    }
+}

@@ -1,0 +1,55 @@
+.bigButton {
+    width: 100%;
+    background: linear-gradient(to top, #a0522c 0%, #e3905c 100%);
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    @media only screen and (max-width: 680px) {
+        & {
+            width: 80%;
+            margin: 15px auto;
+        }
+    }
+
+    & p {
+        text-align: center;
+        margin: 0;
+        color: white;
+        font-size: 17px;
+        font-weight: 500;
+        font-weight: bold;
+    }
+    &Province {
+        background-color: #dbf1ff;
+        border-radius: 8px;
+        @media only screen and (max-width: 680px) {
+            & {
+                width: 80%;
+                margin: 0px auto;
+            }
+        }
+        & ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            & li {
+                padding: 10px 10px 10px 30px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #2287c5;
+                    color: white;
+                }
+
+                & span {
+                    font-size: 15px;
+                    font-weight: 400px;
+                }
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid white;
+                }
+            }
+        }
+    }
+}

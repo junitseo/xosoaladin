@@ -1,0 +1,39 @@
+.right {
+    min-width: 300px;
+}
+
+.right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.2rem 1rem;
+    border: 1px solid black;
+    background-color: rgba(44, 164, 228, 0.2);
+    ;
+    border-radius: 4px;
+}
+
+.right ul li {
+    margin-top: 5px;
+}
+
+.right ul li a {
+    top: 50%;
+    transform: translate(1%, -50%);
+    color: #036;
+    line-height: 18px;
+    font-size: 0.8rem;
+    background: url(https://www.minhngoc.net.vn/template/2016/images/arrow_1.gif) left center no-repeat;
+    padding-left: 10px;
+    transition: 0.3s all;
+}
+
+.right ul li a:hover {
+    color: red;
+}
+
+.clearFloat {
+    clear: both;
+    height: 1px;
+    background-color: #284974;
+    margin-top: 0.5rem;
+}

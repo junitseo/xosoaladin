@@ -1,0 +1,59 @@
+@use "../../global" as v;
+;
+
+.topAppearTable {
+    margin-top: 15px;
+
+    @media only screen and (max-width: 680px) {
+        & {
+            margin: 10px auto;
+        }
+    }
+
+    &Title {
+        text-align: center;
+        background: v.$theme-color;
+        color: white;
+        font-weight: bold;
+        padding: 7px;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    &Content {
+        width: 100%;
+        margin-top: 10px;
+
+        & table {
+            width: 100%;
+
+            & tr {
+                & td {
+                    border: 2px solid #dee2e5;
+                    font-weight: 600;
+                    text-align: center;
+                    padding: 5px 8px;
+                    color: black;
+
+                    &:first-child {
+                        color: red;
+                    }
+                }
+            }
+        }
+
+        &Progress {
+            width: 100%;
+            border-radius: 5px;
+            background-color: #e9ecef;
+            height: 20px;
+
+            &Bar {
+                background-color: #007bff;
+                height: 100%;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+        }
+    }
+}

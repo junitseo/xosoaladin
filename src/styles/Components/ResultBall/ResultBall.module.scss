@@ -1,0 +1,35 @@
+.resultBall {
+    width: 60px;
+    border-radius: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width: 680px) {
+        & {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    @media only screen and (max-width: 450px) {
+        & {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    & p {
+        text-align: center;
+        font-size: 25px;
+        color: white;
+        margin: 0;
+        padding: 0;
+
+        @media only screen and (max-width: 680px) {
+            & {
+                font-size: 20px;
+            }
+        }
+    }
+}

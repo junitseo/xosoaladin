@@ -1,0 +1,223 @@
+@use "../../global.scss" as v;
+
+.xsmbTable {
+    position: relative;
+
+    &Header {
+        border: 0.5px solid gray;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding: 5px;
+        background-color: v.$theme-color;
+
+        & p {
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            font-weight: 16px;
+        }
+    }
+
+    &Content {
+        & table {
+            width: 100%;
+            border-collapse: collapse;
+
+            & thead th {
+                color: #0033cc;
+                font-size: 100%;
+                padding: 5px 0;
+                border: 1px solid #999;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #ffeaa5;
+                }
+            }
+
+            & tbody tr {
+                & td {
+                    font-size: 20px;
+                    text-align: center;
+                    font-weight: bold;
+                    border: 1px solid #999;
+                    cursor: pointer;
+
+                    & div {
+                        display: inline-block;
+                        padding: 5px 0px;
+
+                        &:hover {
+                            background-color: #ffeaa5;
+                        }
+                    }
+                }
+
+                &:nth-child(odd) {
+                    background-color: #f3f3f3;
+                }
+            }
+        }
+    }
+
+    &Footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &Wrapper {
+            padding: 8px;
+            background-color: #f5e9c3;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border: 0.5px solid gray;
+        }
+
+        &DisplayType {
+            & ul {
+                list-style-type: none;
+
+                & li {
+                    display: inline-block;
+                    color: black;
+                    padding: 3px 10px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    border-right: 1px solid gray;
+                    cursor: pointer;
+                    transition: 0.1s;
+
+                    &:hover {
+                        background-color: #e4e4e2;
+                    }
+                }
+            }
+        }
+
+        &DisplayLoto {
+            font-size: 14px;
+
+            & span {
+                padding: 4px 0px;
+                border-left: 1px solid gray;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-width: 100px;
+
+                &:hover {
+                    background-color: #e4e4e2;
+                }
+            }
+        }
+    }
+
+    &Option {
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+
+        &Share,
+        &Zoom {
+            & button {
+                border: 0.5px solid gray;
+                display: flex;
+                align-items: center;
+                width: 100px;
+                border-radius: 8px;
+                cursor: pointer;
+                font-weight: bold;
+
+                & img {
+                    margin-right: 10px;
+                    border-top-left-radius: 8px;
+                    border-bottom-left-radius: 8px;
+                }
+            }
+        }
+
+        &Zoom {
+            margin-left: 10px;
+        }
+    }
+
+    &Zoom {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1100;
+        background-color: white;
+
+        &Header {
+            display: flex;
+            background-image: linear-gradient(to top, #e8f000 0, #e9af78 100%);
+            align-items: center;
+            justify-content: space-between;
+
+            &Option {
+                display: flex;
+                column-gap: 10px;
+                align-items: center;
+                margin-right: 20px;
+
+                &Title {
+                    & p {
+                        font-size: 1.9vw;
+                        color: rgb(255, 0, 0);
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        &ContentTable {
+            & table {
+                width: 100%;
+                border-collapse: collapse;
+
+                & thead th {
+                    color: #0033cc;
+                    font-size: 100%;
+                    padding: 5px 0;
+                    border: 1px solid #999;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #ffeaa5;
+                    }
+                }
+
+                & tbody tr {
+                    & td {
+                        font-size: 30px !important;
+                        text-align: center;
+                        font-weight: bold !important;
+                        border: 1px solid #999;
+                        cursor: pointer;
+
+                        & div {
+                            display: inline-block;
+
+                            padding: 10px 0px;
+
+                            &:hover {
+                                background-color: #ffeaa5;
+                            }
+                        }
+
+                        @media only screen and (max-width: 400px) {
+                            font-size: 24px !important;
+                        }
+                    }
+
+                    &:nth-child(odd) {
+                        background-color: #f3f3f3;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.liveResult {
+    border: 0.5px solid #000;
+    border-radius: 8px;
+    background-color: #eee;
+}
+.liveResultHeader {
+    padding: 5px 10px;
+    border-bottom: 0.5px solid #000;
+}
+.liveResultHeader p {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+.liveResultContent {
+    padding: 3px 3px 10px 3px;
+}
+.liveResultContent p {
+    margin-top: 10px;
+}
+.liveResultContent p a {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+.liveResultContent p a span {
+    margin-left: 3px;
+    font-weight: bold;
+}
+.liveResultNote {
+    padding: 3px;
+    font-size: 12px;
+    text-align: center;
+}
+.liveResultNote span {
+    margin-left: 2px;
+}

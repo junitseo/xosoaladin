@@ -1,0 +1,86 @@
+@use "../../../global" as v;
+;
+
+.vietlottWrapper {
+    padding: 0;
+}
+
+.vietlott {
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (max-width: 1000px) {
+        & {
+            display: block;
+        }
+    }
+
+    &Table {
+        flex: 6;
+        // width: 93.5%;
+        // margin-right: 20px;
+        flex-shrink: 0;
+
+        @media only screen and (max-width: 984px) {
+            & {
+                width: 100%;
+            }
+        }
+
+        &Title {
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            font-size: 18px;
+            color: white;
+            background: v.$theme-color;
+            padding: 7px 0;
+
+            & h1 {
+                margin: 0;
+                font-size: 18px;
+            }
+        }
+
+        &Subtitle {
+            font-size: 18px;
+            color: #0b507b;
+            padding: 7px;
+            font-weight: 500;
+            text-align: center;
+        }
+    }
+
+    &Live {
+        flex: 3;
+        flex-shrink: 0;
+        height: 100%;
+
+        &Button {
+            width: 93.5%;
+            margin-top: 10px;
+        }
+
+        &OpenCalendar {
+            margin-top: 15px;
+            width: 93.5%;
+        }
+    }
+
+    &Statistic {
+        flex-shrink: 0;
+        flex: 3;
+    }
+}
+
+@media only screen and (max-width: 1224px) {
+    .vietlottWrapper {
+        padding: 0 2%;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .vietlottWrapper {
+        padding: 0 0%;
+    }
+}

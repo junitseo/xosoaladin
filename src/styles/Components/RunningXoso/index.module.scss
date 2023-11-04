@@ -1,0 +1,10 @@
+.runningXoso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & span {
+        text-shadow: 3px 5px 2px #5df690, 2px 4px 18px rgba(44, 233, 35, 0.56);
+        opacity: 0.6;
+    }
+}

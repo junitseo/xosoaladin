@@ -1,0 +1,48 @@
+@use "../../global" as v;
+;
+
+.specialTable {
+    @media only screen and (max-width: 680px) {
+        & {
+            margin: 10px auto;
+        }
+    }
+
+    &Title {
+        font-size: 14px;
+        margin: 0px 0px 8px;
+        padding: 7px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        background: v.$theme-color;
+        border-radius: 4px;
+    }
+
+    &Content {
+        width: 100%;
+        margin-top: 10px;
+
+        & table {
+            width: 100%;
+            border-collapse: collapse;
+
+            & tr td {
+                text-align: center;
+                font-size: 13px;
+                border: 2px solid #dee2e5;
+                padding: 5px;
+                color: black;
+            }
+
+            & tr:first-child td {
+                font-weight: bold;
+                padding: 12px;
+            }
+
+            & tr:not(:first-child) td:nth-child(even) {
+                font-weight: bold;
+            }
+        }
+    }
+}

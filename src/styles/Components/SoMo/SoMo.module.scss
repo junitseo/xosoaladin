@@ -1,0 +1,86 @@
+.soMo {
+    width: 100%;
+    margin-top: 15px;
+    @media only screen and (max-width: 680px) {
+        & {
+            width: 80%;
+            margin: 15px auto;
+        }
+    }
+
+    &Title {
+        margin: 0;
+        text-align: center;
+        color: white;
+        background: linear-gradient(to top, #a0522c 0%, #e3905c 100%);
+        font-size: 17px;
+        padding: 13px 0px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        font-weight: bold;
+    }
+
+    &Wrapper {
+        border: 2px solid #f3a97c;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    &Option {
+        & table {
+            width: 100%;
+            border-collapse: collapse;
+
+            & tr {
+                background-color: #d8d8d8;
+
+                & td {
+                    font-size: 14px;
+                    text-align: center;
+                    height: 40px;
+                    border: 1px solid gray;
+                    border-bottom: 1px solid #dddddd;
+                }
+
+                & td:first-child {
+                    border-left: none;
+                }
+
+                & td:last-child {
+                    border-right: none;
+                }
+            }
+        }
+    }
+
+    &Content {
+        & table {
+            width: 100%;
+            border-collapse: collapse;
+
+            & tr {
+                & td {
+                    text-align: center;
+                    height: 45px;
+                    font-size: 14px;
+                    border: 1px solid #ededed;
+
+                    &:first-child {
+                        text-align: start;
+                        padding-left: 10px;
+                    }
+
+                    & p {
+                        width: 39px;
+                        height: 30px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        vertical-align: middle;
+                        display: inline-block;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

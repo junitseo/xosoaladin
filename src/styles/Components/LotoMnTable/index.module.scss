@@ -1,0 +1,59 @@
+.lotoMnTable {
+    display: flex;
+
+    &Column {
+        flex: 1;
+        & table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            & tr {
+                & td {
+                    &:hover {
+                        background-color: #feeaa5;
+                    }
+                    & span {
+                        text-align: center;
+                        cursor: pointer;
+                        &:hover {
+                            display: block;
+                            width: 14px;
+                            height: 14px;
+                            margin: 0 auto;
+                            border-radius: 100%;
+                            left: 0;
+                            background: #757171;
+                            background: radial-gradient(
+                                circle at 5px 5px,
+                                gold,
+                                #001
+                            );
+                            text-shadow: none;
+                            color: #fff;
+                            line-height: 16px;
+                        }
+                    }
+                    color: black;
+                    &:nth-child(2) {
+                        background-color: #efefef;
+                        font-weight: bold;
+                    }
+                }
+
+                & td,
+                & th {
+                    color: black;
+                    border: 0.5px solid #cccccc;
+                    padding: 2px;
+                    text-align: center;
+                    font-size: 12px;
+                }
+
+                & th {
+                    color: black;
+                    background-color: #cccccc;
+                }
+            }
+        }
+    }
+}

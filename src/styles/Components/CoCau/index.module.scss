@@ -1,0 +1,59 @@
+.cocau{
+
+    &Table{
+        margin-top: 20px;
+
+        & table{
+            width: 100%;
+            border-collapse: collapse;
+            & thead {
+                background-color: gainsboro;
+                & th{
+                    font-size: 16px;
+                    color: blue;
+                    font-weight:500;
+                    padding: 5px;
+                }
+            }
+
+            & tbody {
+                & td{
+                    text-align: center;
+                    padding: 8px 0px;
+                    font-size: 15px;
+                    border-left: 1px solid rgb(211, 211, 211);
+                    border-right: 1px solid rgb(211, 211, 211);
+                }
+                border-bottom: 1px solid rgb(211, 211, 211);
+            }
+        }
+    }
+
+    & ul {
+        list-style-type: none;
+        margin-left: 10px;;
+        & li {
+            font-size: 15px;
+            margin-top: 4px;
+            line-height: 26px;
+        }
+    }
+
+    &Wrapper{
+        padding: 20px 10px;
+        border: 1px solid rgb(211, 211, 211)
+    }
+
+    &Title{
+        color: rgb(185, 0, 0);
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    &Heading{
+        color: rgb(97, 97, 97);
+        font-weight: bold;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+}

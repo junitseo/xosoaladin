@@ -1,0 +1,42 @@
+.headerXosoTable {
+    margin-bottom: 20px;
+    color: black;
+
+    & table {
+        background-color: rgba(44, 164, 228, 0.1);
+        ;
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid black;
+
+
+        & tr th {
+            font-size: 12px;
+            text-align: center;
+            padding: 4px;
+            border: 1px solid rgba(0, 0, 0, 0.4);
+
+            &:hover {
+                background-color: #C4E1FF;
+                color: red;
+            }
+        }
+
+        & tr th:first-child {
+            border-radius: 10px;
+        }
+
+        & tr td {
+
+            &:hover {
+                background-color: #C4E1FF;
+                color: red;
+            }
+
+            padding: 4px;
+            font-size: 11px;
+            text-align: center;
+            border: 1px solid rgba(0, 0, 0, 0.4);
+        }
+    }
+}

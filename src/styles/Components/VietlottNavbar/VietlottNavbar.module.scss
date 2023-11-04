@@ -1,0 +1,23 @@
+.vietlottNavbar {
+    & ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        border-bottom: 2px solid #f3a97c;
+
+        & li {
+            display: inline-block;
+            padding: 10px 7px;
+            width: 20%;
+            text-align: center;
+            font-size: 16px;
+            box-sizing: border-box;
+
+            & a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}

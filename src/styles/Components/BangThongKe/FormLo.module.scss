@@ -1,0 +1,28 @@
+.inputNumber {
+    margin-top: 8px;
+
+    & input {
+        margin-left: 8px;
+
+    }
+}
+
+.inputRegion {
+
+    & select {
+        margin-left: 18px;
+    }
+}
+
+.inputDate {
+    margin-top: 8px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.inputSubmit {
+    margin-top: 15px;
+    display: flex;
+    justify-content: start;
+}

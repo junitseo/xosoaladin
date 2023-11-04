@@ -1,0 +1,401 @@
+@use "../../global.scss" as v;
+
+.xsmbTable {
+    position: relative;
+    min-width: 300px;
+
+    @keyframes navbarZoomAppear {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .navbarZoomTable {
+        position: fixed;
+        top: 0%;
+        left: 15%;
+        animation: navbarZoomAppear 0.4s forwards;
+        background-color: black;
+        display: none;
+    }
+
+    &Header {
+        border: 0.5px solid gray;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding: 5px;
+        background-color: v.$theme-color;
+
+        & img {
+            width: 20px;
+        }
+
+        &:hover .navbarZoomTable {
+            display: block;
+        }
+
+        & h2 {
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        & p {
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+
+    &Content {
+        & table {
+            width: 100%;
+            border-collapse: collapse;
+
+            & thead th {
+                color: #0033cc;
+                font-size: 100%;
+                padding: 5px 0;
+                border: 1px solid #999;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #ffeaa5;
+                }
+            }
+
+            & tbody tr {
+                &:first-child td {
+                    font-size: 14px !important;
+                    padding: 5px;
+                    font-weight: 400;
+                }
+
+                & td {
+                    font-size: 20px;
+                    text-align: center;
+                    font-weight: bold;
+                    border: 1px solid #999;
+                    cursor: pointer;
+                    color: black;
+
+                    & div {
+                        display: inline-block;
+                        padding: 5px 0px;
+
+                        &:hover {
+                            background-color: #ffeaa5;
+                        }
+                    }
+                }
+
+                &:nth-child(odd) {
+                    background-color: #f3f3f3;
+                }
+            }
+        }
+    }
+
+    &Footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media only screen and (max-width: 450px) {
+            justify-content: start;
+        }
+
+        &FilterLoto {
+            & div {
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background: #757171;
+                background: radial-gradient(circle at 5px 5px,
+                        #f7f5f5,
+                        #31313a);
+                text-shadow: none;
+                color: #fff;
+                line-height: 16px;
+                text-align: center;
+                font-size: 15px;
+                margin: 3px 2px;
+                cursor: pointer;
+                transition: background 0.2s ease-in-out;
+
+                @media only screen and (max-width: 450px) {
+                    width: 14px;
+                    height: 14px;
+                }
+
+                &:hover {
+                    background: radial-gradient(circle at 5px 5px, gold, #001);
+                }
+            }
+        }
+
+        &Wrapper {
+            padding: 8px;
+            background-color: #f5e9c3;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border: 0.5px solid gray;
+        }
+
+        &DisplayType {
+            @media only screen and (max-width: 450px) {
+                width: 100px;
+            }
+
+            & ul {
+                list-style-type: none;
+
+                & li {
+                    display: inline-block;
+                    color: black;
+                    padding: 3px 10px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    border-right: 1px solid gray;
+                    cursor: pointer;
+                    transition: 0.1s;
+
+                    &:hover {
+                        background-color: #e4e4e2;
+                    }
+
+                    @media only screen and (max-width: 450px) {
+                        padding: 3px;
+                    }
+                }
+            }
+        }
+
+        &DisplayLoto {
+            font-size: 14px;
+
+            @media only screen and (max-width: 450px) {
+                width: 60px;
+            }
+
+            & span {
+                padding: 4px 0px;
+                font-weight: 600;
+
+                border-left: 1px solid gray;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-width: 60px;
+                color: black;
+
+                &:hover {
+                    background-color: #e4e4e2;
+                }
+            }
+        }
+    }
+
+    &Option {
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+
+        &Share,
+        &Zoom {
+            & button {
+                border: 0.5px solid gray;
+                display: flex;
+                align-items: center;
+                width: 100px;
+                border-radius: 8px;
+                cursor: pointer;
+                font-weight: bold;
+
+                & img {
+                    margin-right: 10px;
+                    border-top-left-radius: 8px;
+                    border-bottom-left-radius: 8px;
+                }
+            }
+        }
+
+        &Zoom {
+            margin-left: 10px;
+        }
+    }
+
+    &Zoom {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1100;
+        background-color: #960100;
+
+        &Header {
+            &Logo {
+                & img {
+                    width: 20vh;
+
+                    @media only screen and (max-width: 768px) {
+                        width: 11vh;
+                    }
+                }
+            }
+
+            display: flex;
+            background-image: linear-gradient(to top, #e8f000 0, #e9af78 100%);
+            align-items: center;
+            justify-content: space-between;
+
+            &:hover .navbarZoomTable {
+                display: block;
+            }
+
+            &Option {
+                &Minimize {
+                    & img {
+                        width: 4vh;
+                    }
+                }
+
+                &Lock {
+                    & img {
+                        width: 4.5vh;
+                    }
+                }
+
+                display: flex;
+                column-gap: 10px;
+                align-items: center;
+                margin-right: 20px;
+
+                &Title {
+                    & p {
+                        font-size: 3vh;
+                        color: rgb(255, 0, 0);
+                        font-weight: 600;
+
+                        @media only screen and (max-width: 876px) {
+                            font-size: 2vh;
+                        }
+
+                        @media only screen and (max-height: 600px) {
+                            font-size: 2.3vh;
+                        }
+                    }
+                }
+            }
+        }
+
+        &ContentTable {
+            width: 100%;
+
+            & table {
+                border-collapse: collapse;
+                background-color: white;
+                width: 100%;
+
+                & thead th {
+                    color: #0033cc;
+                    font-size: 4vh;
+                    padding: 5px 0;
+                    border: 1px solid #999;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #ffeaa5;
+                    }
+                }
+
+                & tbody tr {
+                    & td {
+                        font-size: 3.4vh !important;
+                        text-align: center;
+                        border: 1px solid #999;
+                        cursor: pointer;
+                        color: black;
+
+                        & div {
+                            display: inline-block;
+                            font-size: 5.2vh !important;
+                            font-weight: bolder;
+                            padding: 0.6vh 0px;
+                            color: black;
+
+
+
+                            @media only screen and (max-height: 450px) {
+                                font-size: 4.5vh !important;
+                            }
+
+                            @media only screen and (max-width: 440px) {
+                                font-size: 4.2vh !important;
+                            }
+
+                            &:hover {
+                                background-color: #ffeaa5;
+                            }
+                        }
+
+                        @media only screen and (max-width: 768px) {
+                            & div {
+                                font-size: 4vh !important;
+                            }
+                        }
+
+                        @media only screen and (max-width: 440px) {
+                            font-size: 25px !important;
+                        }
+
+                        &:first-child {
+                            @media only screen and (max-width: 440px) {
+                                font-size: 20px !important;
+                            }
+                        }
+                    }
+
+                    &:nth-child(odd) {
+                        background-color: #f3f3f3;
+                    }
+
+                    &:first-child td {
+                        font-size: 2.4vh !important;
+                        padding: 5px;
+
+                        @media only screen and (max-width: 768px) {
+                            font-size: 1.7vh !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.xosoMbTableZoomFooter {
+    background-color: #960100;
+    padding: 5px;
+
+    & p {
+        height: 13px;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 13px;
+        color: #fff;
+        text-align: center;
+        font-style: italic;
+    }
+}

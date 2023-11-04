@@ -1,0 +1,116 @@
+@use "../../global" as v;
+;
+
+.power {
+    margin-top: 20px;
+    border: 1px solid #0f507b;
+    // padding: 10px;
+    border-radius: 8px;
+
+    &Header {
+        background: v.$theme-color;
+        padding: 15px 0px;
+        font-size: 18px;
+        text-transform: uppercase;
+        border-radius: 8px;
+
+        &Title {
+            text-align: center;
+            color: white;
+            margin: 0;
+            padding: 0;
+            font-weight: 600;
+        }
+    }
+
+    &Result {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+
+        &Ball {
+            &:not(:first-child) {
+                margin-left: 10px;
+            }
+        }
+
+        &Divider {
+            width: 2px;
+            height: 60px;
+            background-color: black;
+            margin-left: 10px;
+        }
+
+        &Prize {
+            font-size: 20px;
+            color: black;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 10px;
+
+            @media only screen and (max-width: 680px) {
+                & {
+                    font-size: 16px;
+                }
+            }
+
+            &2 {
+                font-size: 20px;
+                color: black;
+                font-weight: 600;
+                text-align: center;
+                margin-top: 0px;
+
+                @media only screen and (max-width: 680px) {
+                    & {
+                        font-size: 16px;
+                    }
+                }
+
+                & span {
+                    font-size: 27px;
+                    color: #e00;
+
+                    @media only screen and (max-width: 680px) {
+                        & {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+
+            & span {
+                font-size: 27px;
+                color: #e00;
+
+                @media only screen and (max-width: 680px) {
+                    & {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        &Table {
+            & table {
+                width: 100%;
+                border-collapse: collapse;
+
+                & tr:first-child {
+                    background-color: rgb(219, 219, 219);
+                }
+
+                & tr td {
+                    padding: 7px;
+                    font-size: 17px;
+                }
+
+                & tr:not(:first-child) td:first-child {
+                    color: #0f507b;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

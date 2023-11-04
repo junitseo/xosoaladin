@@ -1,0 +1,72 @@
+.somo {
+
+    &Title {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    &Description {
+        color: #333;
+        font-weight: normal;
+        font-size: 14px;
+        text-align: justify;
+        margin-top: 10px;
+    }
+
+    & table {
+        margin-top: 20px;
+        width: 100%;
+        border-collapse: collapse;
+
+        & thead {
+
+            & tr {
+                background-color: #dfdfdf;
+            }
+        }
+
+        & tbody {
+
+            & tr:nth-child(odd) {
+                background-color: #f3f3f3;
+            }
+        }
+
+        & tr {
+
+            & th {
+                text-align: start;
+            }
+
+
+            & td {
+                padding: 5px;
+                font-size: 14px;
+            }
+
+            & th:first-child {
+                text-align: center;
+            }
+
+            & td:first-child {
+                text-align: center;
+            }
+
+            & td:nth-child(2) {
+                color: #ff8800;
+            }
+
+            & th {
+                padding: 5px;
+            }
+
+        }
+    }
+}
+
+.alphabetSearch {
+
+    &:hover {
+        color: red;
+    }
+}

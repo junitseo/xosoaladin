@@ -1,0 +1,100 @@
+.xosoLive {
+    width: 93.5%;
+    margin-top: 15px;
+
+    @media only screen and (max-width: 984px) {
+        & {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 680px) {
+        & {
+            width: 80%;
+            margin: 15px auto;
+        }
+    }
+
+    &Header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to top, #a0522c 0%, #e3905c 100%);
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding: 10px;
+
+        &Title {
+            font-size: 15px;
+            color: white;
+            margin: 0;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+
+    &Content {
+        padding: 10px 15px;
+        background-color: #dbf1ff;
+        padding-bottom: 25px;
+
+        &Sub {
+            margin-top: 10px;
+
+            & li {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            & a {
+                font-size: 16px;
+                font-weight: 500;
+                color: #f3a97c;
+            }
+
+            &:nth-child(4) {
+                margin-bottom: 5px !important;
+            }
+        }
+
+        & ul {
+            list-style-type: none;
+            padding: 0;
+            padding-left: 10px;
+            margin: 0;
+            cursor: pointer;
+
+            & li {
+                font-size: 14px;
+                margin-top: 6px;
+            }
+        }
+
+        &SmallTitle {
+            font-size: 14px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &Footer {
+        background-color: #ededed;
+        padding: 12px;
+        font-size: 14px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        & p {
+            text-align: center;
+            margin: 0;
+
+            & span:not(:first-child) {
+                margin-left: 8px;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.title {
+    margin-top: 15px;
+    color: #284974;
+    font-size: 15px;
+    font-weight: 700;
+    background: url('/images/cpo-top-title.png') top left no-repeat;
+    padding: 3px 0 7px 60px;
+}
+
+.tableTitle td {
+    border: 1px double #999;
+    border-left: 0;
+    border-top: 0;
+    color: #fff;
+    background-color: #013b7d;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tableContent td {
+    text-align: center;
+    border: 1px solid black !important;
+    border-left: 0;
+    border-top: 0;
+    font-size: 18px;
+    color: #006;
+    font-weight: bold;
+    padding: 3px;
+}

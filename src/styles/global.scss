@@ -1,0 +1,8 @@
+$theme-color: #2ca4e4;
+$text-color-main: linear-gradient(18deg, rgb(235, 95, 76) 0%, rgba(44, 164, 228, 1) 50%);
+
+@mixin mainText {
+    background: $text-color-main;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

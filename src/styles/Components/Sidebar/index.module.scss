@@ -1,0 +1,9 @@
+.sidebar {
+    &Advertise {
+        margin-top: 15px;
+
+        & img {
+            width: 100%;
+        }
+    }
+}

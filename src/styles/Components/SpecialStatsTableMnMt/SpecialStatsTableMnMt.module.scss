@@ -1,0 +1,72 @@
+@use "../../global" as v;
+;
+
+.specialStatsTableMnMt {
+    @media only screen and (max-width: 680px) {
+        & {
+            margin: 10px auto;
+        }
+    }
+
+    &Title {
+        font-size: 17px;
+        margin: 0px 0px 8px;
+        padding: 7px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        background: v.$theme-color;
+        font-size: 14px;
+        border-radius: 4px;
+    }
+
+    &Content {
+        width: 100%;
+        margin-top: 15px;
+
+        & table {
+            width: 100%;
+            border-collapse: collapse;
+
+            & tr td {
+                text-align: center;
+                font-size: 14px;
+                border: 2px solid #dee2e5;
+                color: black;
+            }
+
+            & tr:first-child td {
+                font-weight: bold;
+                padding: 12px;
+            }
+
+            & tr:not(:first-child) td:nth-child(even) {
+                font-weight: bold;
+            }
+
+            & tr:not(:first-child) td:nth-child(2) {
+                & span {
+                    display: block;
+                    padding: 5px 0px;
+
+                    &:not(:last-child) {
+                        border-bottom: 2px solid #dee2e5;
+                    }
+                }
+            }
+
+            & tr:not(:first-child) td:nth-child(3) {
+                font-weight: bold;
+
+                & span {
+                    display: block;
+                    padding: 5px 0px;
+
+                    &:not(:last-child) {
+                        border-bottom: 2px solid #dee2e5;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@use "../../global" as v;
+
+.headTailAppear {
+    margin-top: 10px;
+
+    @media only screen and (max-width: 680px) {
+        & {
+            margin: 10px auto;
+        }
+    }
+
+    &Title {
+        text-align: center;
+        background: v.$theme-color;
+        color: white;
+        font-weight: bold;
+        padding: 7px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    &Table {
+        margin-top: 10px;
+        width: 100%;
+
+        & table {
+            width: 100%;
+
+            & tr {
+                & td {
+                    text-align: center;
+                    font-weight: 600;
+                    border: 2px solid #dee2e5;
+                    font-size: 14px;
+                    padding: 5px 0px;
+                    color: black;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+# *
+User-agent: *
+Disallow: /404
+Disallow: /admin.xossoaladin.com
+Disallow: /readme.html
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://xosoaladin.com/
+
+# Sitemaps
+Sitemap: https://xosoaladin.com/sitemap.xml
+Sitemap: https://xosoaladin.com/giaimagiacmo-sitemap.xml
+Sitemap: https://xosoaladin.com/dudoan-sitemap.xml
+Sitemap: https://xosoaladin.com/tintuc-sitemap.xml

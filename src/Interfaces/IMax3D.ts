@@ -1,0 +1,33 @@
+export default interface IMax3D {
+    dayPrize: string
+    dayPrizeNext: string
+    firstPrize1: string
+    firstPrize2: string
+    secondPrize1: string
+    secondPrize2: string
+    secondPrize3: string
+    secondPrize4: string
+    thirdPrize1: string
+    thirdPrize2: string
+    thirdPrize3: string
+    thirdPrize4: string
+    thirdPrize5: string
+    thirdPrize6: string
+    resultsConsolation1: string
+    resultsConsolation2: string
+    resultsConsolation3: string
+    resultsConsolation4: string
+    resultsConsolation5: string
+    resultsConsolation6: string
+    resultsConsolation7: string
+    resultsConsolation8: string
+    firstTotalWinners: string
+    secondTotalWinners: string
+    thirdTotalWinners: string
+    consolationTotalWinners: string
+    win1StAmount: string
+    win2StAmount: string
+    win3StAmount: string
+    winConsolationAmount: string
+    idKy: string
+}

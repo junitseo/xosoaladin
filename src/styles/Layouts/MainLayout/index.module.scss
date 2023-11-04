@@ -1,0 +1,58 @@
+.mainLayout {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    @media only screen and (max-width: 576px) {
+        padding: 0 10px;
+    }
+
+    &Content {
+        margin-top: 10px;
+        display: flex;
+        column-gap: 15px;
+        padding-bottom: 10px;
+        border-bottom: 0.5px solid gray;
+        max-width: 1120px;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    @media only screen and (max-width: 642px) {
+        &Sidebar {
+            order: 3;
+        }
+
+        &Page {
+            order: 1;
+        }
+
+        &Advertise {
+            order: 2;
+        }
+    }
+
+    &Sidebar {
+        flex: 2;
+    }
+
+    &Page {
+        flex: 5;
+        min-width: 320px;
+    }
+
+    &Advertise {
+        flex: 3;
+    }
+}
+
+.rightAdvertise {
+    position: sticky;
+    top: 10px;
+}
+
+.rightAdvertise2 {
+    position: sticky;
+    top: 10px;
+}

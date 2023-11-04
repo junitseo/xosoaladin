@@ -1,0 +1,97 @@
+@use "../../global" as v;
+
+.headerTable {
+
+    &Statistic {
+        border-radius: 8px 8px 0px 0px;
+        border: 2px solid #C75B00;
+
+        &FormLo {
+
+            & table {
+                border-collapse: collapse;
+                width: 100%;
+
+
+                & thead {
+                    background-color: v.$theme-color;
+                    color: white;
+
+                    & th {
+                        text-align: start;
+                        font-size: 12px;
+                        padding: 4px 10px;
+                        border: 1px solid rgb(155, 155, 155);
+                        border-radius: 5px 5px 0px 0px;
+                    }
+                }
+
+                & tbody {
+
+                    & td {
+                        padding: 4px 10px;
+                        border: 1px solid rgb(155, 155, 155);
+                    }
+                }
+            }
+        }
+
+        &Form {
+            padding: 10px 15px;
+            background-color: #FEFFE5;
+            border: 2px solid #C75B00;
+            border-top: none;
+
+            & label {
+                font-size: 12px;
+            }
+
+            & input {
+                outline: none;
+                border: 1px solid black;
+                padding: 2px 3px;
+                font-size: 12px;
+                border-radius: 3px;
+            }
+        }
+
+        &Option {
+            display: flex;
+            gap: 10px;
+            padding: 8px 10px;
+            background-color: v.$theme-color;
+            border-radius: 6px 6px 0px 0px;
+            color: white;
+
+            & span {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    &Title {
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    &Option {
+        display: flex;
+        margin-top: 10px;
+        gap: 2px;
+        justify-content: center;
+
+        &Active {
+            background-color: #630b0b !important;
+        }
+
+        & p {
+            padding: 6px 10px;
+            background-color: #666;
+            border-radius: 8px 8px 0px 0px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+}

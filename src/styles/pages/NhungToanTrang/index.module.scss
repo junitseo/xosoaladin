@@ -1,0 +1,23 @@
+.allIframeIntroduction{
+    margin-top: 10px;
+    border: 1px solid gray;
+    padding: 15px;
+    position: relative;
+
+    & p{
+        font-size: 12px;
+    }
+}
+
+.allFrameTitle{
+    position: absolute;
+    font-size: 15px;
+    top: -13%;
+    padding: 2px 5px;
+    background-color: white;
+    z-index: 2;
+}
+
+.allIframeContent{
+    margin-top: 20px;
+}
